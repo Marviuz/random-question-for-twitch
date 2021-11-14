@@ -17,7 +17,7 @@ if ($response->results[0]->type == "boolean") {
     
     $choice_identifier = ["🔴","🟠","🟡","🟢"];
     for ($i = 0; $i < count($all); $i++) {
-        $c = html_entity_decode($all[$i]);
+        $c = html_entity_decode($all[$i], ENT_QUOTES);
         $ci = $choice_identifier[$i];
         $all[$i] = "$ci $c";
     }
