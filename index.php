@@ -26,5 +26,5 @@ if ($response->results[0]->type == "boolean") {
     
 }
 
-echo html_entity_decode($response->results[0]->question) . " " . $choices;
+echo html_entity_decode($response->results[0]->question, ENT_QUOTES) . " " . $choices;
 ?>
